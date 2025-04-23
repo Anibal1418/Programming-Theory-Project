@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
+    // ENCAPSULATION
     protected Rigidbody Rb;
     protected GameObject player;
     protected float speed;
@@ -19,7 +20,8 @@ public class EnemyControl : MonoBehaviour
         CheckOutOfBounds();
     }
 
-    protected virtual void CheckOutOfBounds()
+    // ABSTRACTION
+    protected void CheckOutOfBounds()
     {
         if(transform.position.y < 0)
         {
@@ -27,6 +29,7 @@ public class EnemyControl : MonoBehaviour
         }
     }
 
+    // POLYMORPHISM
     protected virtual void Move()
     {
         Rb.AddForce((player.transform.position - transform.position).normalized * speed);       

@@ -76,6 +76,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
+    
     //Makes the player object move based on WASD keys and Physics
     void PlayerMove()
     {
@@ -133,5 +135,6 @@ public class PlayerController : MonoBehaviour
         } 
     }
 
+    // ENCAPSULATION GETTER
     public bool GetStateOfGame() {return isGameRunning;}
 }

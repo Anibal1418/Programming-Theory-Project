@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// INHERITANCE
 public class RangedEnemyControl : EnemyControl
 {
     private float startShooting = 2.0f;
