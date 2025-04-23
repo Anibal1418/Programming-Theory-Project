@@ -14,12 +14,12 @@ public class CameraRotation : MonoBehaviour
         target = GameObject.Find("Player");
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void LateUpdate()
     {
+        RotateCameraXY();
     }
 
-    void LateUpdate()
+    private void RotateCameraXY()
     {
         float horizontalInput = Input.GetAxis("Mouse X");
         float verticalInput = Input.GetAxis("Mouse Y");
@@ -53,6 +53,4 @@ public class CameraRotation : MonoBehaviour
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0);
         transform.position = target.transform.position; 
     }
-
-    
 }

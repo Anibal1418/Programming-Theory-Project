@@ -19,12 +19,6 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void SpawnEnemies()
     {
         if(playerController.GetStateOfGame())

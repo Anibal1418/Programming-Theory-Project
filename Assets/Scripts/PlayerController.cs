@@ -9,8 +9,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private int playerHp = 5;
-    [SerializeField] private float Speed = 700.0f;
+    private int playerHp = 5;
+    private float Speed = 700.0f;
     private const float jumpForce = 7.5f;
     private int timeToWin = 60;
     private bool isOnGround = true;
@@ -23,14 +23,7 @@ public class PlayerController : MonoBehaviour
     public Button gameOverButton;
     public Button startGameButton;
     PlayerController Controller;
-
     public float InputSpeed = 10.0f;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()

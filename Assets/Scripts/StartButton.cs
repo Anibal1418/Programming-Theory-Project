@@ -12,10 +12,4 @@ public class StartButton : MonoBehaviour
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         button.onClick.AddListener(playerController.StartGameSequence);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

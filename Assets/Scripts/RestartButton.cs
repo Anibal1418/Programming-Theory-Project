@@ -12,12 +12,6 @@ public class RestartButton : MonoBehaviour
         button.onClick.AddListener(RestartGame);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
